@@ -1,0 +1,61 @@
+  body {
+    background-color: black;
+  }
+  
+  .combo {
+    color: white;
+    font-family: Tahoma;
+    position: absolute;
+    top: 500px;
+    left: 1165px;
+    font-size: 40px;
+  }
+  
+  .button {
+    transition: transform 0.2s;
+    background-color: transparent;
+    border: none;
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+  }
+  .button img{
+    width: 100%;
+    height: 100%;
+  }
+  .button.pressed {
+    transform: translateY(3px);
+  }
+  .note-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 1000px;
+    border: 5px solid white;
+    display: flex;
+    justify-content: space-between;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .note {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #ccc;
+    transition: transform 0.2s;
+    top: 0;
+  }
+  
+  .note.hit {
+    display: none;
+    transform: translateY(50px);
+  }
+  .note.missed {
+    display: none;
+  }
